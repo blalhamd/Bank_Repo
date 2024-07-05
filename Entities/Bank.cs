@@ -3,7 +3,7 @@ namespace BankSystem.Entities
 {
     public class Bank
     {
-        public int Id { get; set; }
+        public int Id { get; set; } // PK
         public string NameBank { get; set; } // following Naming rules
         public string phone { get; set; }
         public string address { get; set; }
