@@ -11,7 +11,7 @@ namespace BankSystem.Entities
         public ICollection<Account> accounts { get; set; } = new List<Account>();
         public ICollection<Customer> customers { get; set; } = new List<Customer>();
 
-        public override string ToString()
+        public override string ToString() // was virtual
         {
             Console.WriteLine("__________________________________________________________________________________________");
             return $"[{Id}]\t\t[{NameBank}]\t\t[{phone}]\t\t[{address}]\t\t[{NumberBranches}]\n";
